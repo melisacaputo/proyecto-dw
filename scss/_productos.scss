@@ -1,81 +1,35 @@
 /* === PRODUCTOS === */
 .section-productos {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
 
-    .categorias {
-        display: inline-block;
-        margin-right: 40px;
-        margin-left: 30px;
-        padding: 40px;
-    }
+    .card-product {
+        width: 33.333333%;
+        font-family: sans-serif;
 
-    .productos {
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-areas:
-            "batik buzo gorro1"
-            "gorro2 pant reme";
+        a {
+            text-decoration: none;
+            color: black;
 
-        .articleProductos {
-            width: 100%;
-            border: solid 1px $negro;
-            border-radius: 1em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 1em;
-            background: linear-gradient(30deg, $lila, $blanco);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
-            .img-product {
-                width: auto;
-                height: 12em;
-                padding: 10px;
+        .img-container {
+            overflow: hidden;
+            height: 400px;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                top: -25%;
+                transition: all 0.5s;
             }
         }
     }
-}
-
-#buzo-batik {
-    grid-area: batik;
-    justify-self: center;
-    grid-row: 1;
-    grid-column: 1;
-}
-
-#buzo-notte {
-    grid-area: buzo;
-    justify-self: center;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-#gorro-negro {
-    grid-area: gorro1;
-    justify-self: center;
-    grid-row: 1;
-    grid-column: 3;
-}
-
-#gorro-violeta {
-    grid-area: gorro2;
-    justify-self: center;
-    grid-row: 2;
-    grid-column: 1;
-}
-
-#pant-notte {
-    grid-area: pant;
-    justify-self: center;
-    grid-row: 2;
-    grid-column: 2;
-}
-
-#reme-stripped {
-    grid-area: reme;
-    justify-self: center;
-    grid-row: 2;
-    grid-column: 3;
 }
