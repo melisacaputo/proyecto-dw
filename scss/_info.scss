@@ -1,0 +1,24 @@
+/* === INFO === */
+.info {
+    h2 {
+        margin: 20px;
+        letter-spacing: 5px;
+        word-spacing: 6px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .info-pregunta {
+        font-size: $font + 5;
+
+        &:not(.collapsed) {
+            color: $negro;
+            background-color: $blanco;
+        }
+
+        &:focus {
+            border-color: $lila;
+            box-shadow: 0 0 0 0.25rem $lila;
+        }
+    }
+}

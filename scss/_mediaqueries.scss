@@ -1,0 +1,195 @@
+/* Smartphone ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  /*---- GENERAL ----*/
+  header {
+    font-size: $font + 8;
+
+    nav {
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .logo {
+          font-size: $font * 2;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: $font - 4;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+
+      .footer-info {
+        display: flex;
+
+        li:first-of-type {
+          margin-right: 20px;
+        }
+      }
+
+      .footer-redes {
+        li {
+          i {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*---- INDEX ----*/
+  .img-mobile {
+    width: 20em;
+  }
+
+  .cuadro-uno,
+  .cuadro-dos,
+  .cuadro-tres {
+    border-left: none;
+    border-right: none;
+    border-top: solid 2px $negro;
+    border-bottom: solid 2px $negro;
+  }
+
+  /*---- PRODUCTOS ----*/
+  .section-productos {
+    display: flex;
+    flex-direction: column;
+
+    .categorias {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    .productos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  /*---- CONTACTO ----*/
+  .div-contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 10px;
+  }
+
+  #wpp {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+  }
+
+  #redes {
+    padding: 50px;
+  }
+
+  #datos {
+    padding: 50px 50px 70px 50px;
+  }
+
+  .form-contacto {
+    display: none;
+  }
+
+  /*---- INFO ----*/
+  .info {
+    .info-pregunta {
+      font-size: $font;
+      padding: 10px;
+    }
+  }
+
+  /*---- CARRITO ----*/
+  .section-carrito {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .carrito {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+/* Tablet ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  /*---- GENERAL ----*/
+  nav {
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  p {
+    font-size: $font + 4;
+  }
+
+  footer {
+    font-size: $font + 2;
+
+    .footer-content {
+      justify-content: space-around;
+    }
+  }
+
+  /*----INDEX----*/
+  .cuadro-uno,
+  .cuadro-dos,
+  .cuadro-tres {
+    border: solid 2px $negro;
+  }
+
+  /*---- PRODUCTOS ----*/
+  .section-productos {
+    grid-column-gap: 50px;
+    justify-content: start;
+
+    .productos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /*---- CONTACTO ----*/
+  .form-contacto {
+    display: none;
+  }
+
+  #wpp {
+    padding: 50px 30vh;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  /*---- CARRITO ----*/
+  .section-carrito {
+    margin-left: 40px;
+
+    .carrito {
+      table {
+        width: 30vh;
+
+        td {
+          font-size: $font + 5;
+        }
+      }
+    }
+  }
+}

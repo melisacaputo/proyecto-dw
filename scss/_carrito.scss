@@ -1,0 +1,25 @@
+/* === CARRITO === */
+.section-carrito {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    .carrito {
+        display: inline-block;
+        padding: 30px;
+        vertical-align: top;
+
+        td {
+            font-size: $font;
+        }
+
+        .resumenCompra {
+            padding: 15px;
+        }
+
+        .carrito-img {
+            height: 20em;
+            margin: 10px;
+        }
+    }
+}
