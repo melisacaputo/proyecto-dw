@@ -1,35 +1,65 @@
 /* === PRODUCTOS === */
-.section-productos {
-    width: 100%;
+.container-productos {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px 0;
+    justify-content: space-evenly;
 
-    .card-product {
-        width: 33.333333%;
-        font-family: sans-serif;
+    .categorias {
+        display: inline-block;
+        margin-right: 40px;
+        margin-left: 30px;
+        padding: 40px;
 
-        a {
-            text-decoration: none;
-            color: black;
+        ul {
+            li {
+                list-style-type: none;
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+                a {
+                text-decoration: none;
+                color: $negro;
+                font-size: $font;
 
-        .img-container {
-            overflow: hidden;
-            height: 400px;
-            position: relative;
-
-            img {
-                width: 100%;
-                position: absolute;
-                top: -25%;
-                transition: all 0.5s;
+                &:hover {
+                    font-weight: bold;
+                }
+                }
             }
         }
     }
+    .section-productos {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 0;
+    
+        .card-product {
+            width: 40%;
+            font-family: sans-serif;
+            margin: 20px;
+    
+            a {
+                text-decoration: none;
+                color: black;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                p, strong {
+                    font-family: oswald, sans-serif;
+                }
+            }
+    
+            .img-container {
+                overflow: hidden;
+                position: relative;
+    
+                img {
+                    width: 80%;
+                    height: 50%;
+                    padding: 20px;
+                }
+            }
+        }
+}
 }

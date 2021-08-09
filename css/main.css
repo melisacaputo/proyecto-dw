@@ -105,29 +105,46 @@ footer {
     border-right: solid 2px #000100; }
 
 /* === PRODUCTOS === */
-.section-productos {
-  width: 100%;
+.container-productos {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 50px 0; }
-  .section-productos .card-product {
-    width: 33.333333%;
-    font-family: sans-serif; }
-    .section-productos .card-product a {
-      text-decoration: none;
-      color: black; }
-      .section-productos .card-product a:hover {
-        text-decoration: underline; }
-    .section-productos .card-product .img-container {
-      overflow: hidden;
-      height: 400px;
-      position: relative; }
-      .section-productos .card-product .img-container img {
-        width: 100%;
-        position: absolute;
-        top: -25%;
-        transition: all 0.5s; }
+  justify-content: space-evenly; }
+  .container-productos .categorias {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 30px;
+    padding: 40px; }
+    .container-productos .categorias ul li {
+      list-style-type: none; }
+      .container-productos .categorias ul li a {
+        text-decoration: none;
+        color: #000100;
+        font-size: 20px; }
+        .container-productos .categorias ul li a:hover {
+          font-weight: bold; }
+  .container-productos .section-productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0; }
+    .container-productos .section-productos .card-product {
+      width: 40%;
+      font-family: sans-serif;
+      margin: 20px; }
+      .container-productos .section-productos .card-product a {
+        text-decoration: none;
+        color: black; }
+        .container-productos .section-productos .card-product a:hover {
+          text-decoration: underline; }
+        .container-productos .section-productos .card-product a p, .container-productos .section-productos .card-product a strong {
+          font-family: oswald, sans-serif; }
+      .container-productos .section-productos .card-product .img-container {
+        overflow: hidden;
+        position: relative; }
+        .container-productos .section-productos .card-product .img-container img {
+          width: 80%;
+          height: 50%;
+          padding: 20px; }
 
 /* === CONTACTO === */
 .section-contacto {
@@ -245,17 +262,21 @@ footer {
     border-top: solid 2px #000100;
     border-bottom: solid 2px #000100; }
   /*---- PRODUCTOS ----*/
-  .section-productos {
+  .container-productos {
     display: flex;
     flex-direction: column; }
-    .section-productos .categorias {
+    .container-productos .categorias {
       margin-top: 0px;
-      padding-top: 0px; }
-    .section-productos .productos {
+      padding-top: 0px;
+      padding-bottom: 0px; }
+    .container-productos .section-productos {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center; }
+      text-align: center;
+      padding-top: 0px; }
+      .container-productos .section-productos .card-product {
+        width: 100%; }
   /*---- CONTACTO ----*/
   .div-contacto {
     display: grid;
@@ -305,13 +326,28 @@ footer {
   .cuadro-tres {
     border: solid 2px #000100; }
   /*---- PRODUCTOS ----*/
-  .section-productos {
-    grid-column-gap: 50px;
-    justify-content: start; }
-    .section-productos .productos {
+  .container-productos {
+    display: flex;
+    flex-direction: column; }
+    .container-productos .categorias {
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: center; }
+      .container-productos .categorias ul {
+        display: flex;
+        justify-content: center; }
+        .container-productos .categorias ul li a {
+          font-size: 25px;
+          margin: 10px; }
+    .container-productos .section-productos {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 0px; }
+      .container-productos .section-productos .card-product {
+        width: 80%; }
   /*---- CONTACTO ----*/
   .form-contacto {
     display: none; }
