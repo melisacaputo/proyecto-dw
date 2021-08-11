@@ -1,25 +1,42 @@
 /* === CARRITO === */
 .section-carrito {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-left: 20vh;
 
+    .form-carrito {
+        width: 80vh;
 
-    .carrito {
-        display: inline-block;
-        padding: 30px;
-        vertical-align: top;
+        form {
 
-        td {
-            font-size: $font;
+            h2 {
+                font-size: $font + 4;
+            }
+
         }
+    }
 
-        .resumenCompra {
-            padding: 15px;
-        }
+    .resumen-carrito {
+        width: 70vh;
 
-        .carrito-img {
-            height: 20em;
-            margin: 10px;
+        table {
+            background-color: rgba(245, 245, 245, 0.63);
+            text-align: left;
+            border-collapse: collapse;
+            width: 75%;
+
+            tr {
+                td {
+                    font-size: $font;
+                    padding: 15px;
+                    width: 20em;
+
+                    img {
+                        width: 7em;
+                    }
+                }
+            }
+
         }
     }
 }

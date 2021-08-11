@@ -52,31 +52,58 @@
   </header>
 
   <section class="section-carrito animate__animated animate__fadeIn">
-    <div class="carrito">
-      <table border="solid 1px black" cellpadding="4px" cellspacing="4px">
+    <div class="form-carrito">
+      <form class="row g-3">
+        <h2>Datos de contacto</h2>
+        <div class="col-md-12">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class=" col-md-12">
+          <input type="email" class="form-control" placeholder="Email" />
+        </div>
+        <h2>Entrega</h2>
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="Dirección" />
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Provincia" />
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Localidad" />
+        </div>
+        <div>
+          <select name="envio" class="form-select">
+            <option selected>Método de Envío</option>
+            <option value="moto">Envío a domicilio</option>
+            <option value="retiro">Retirar por nuestro showroom</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn botones">Continuar</button>
+        </div>
+      </form>
+    </div>
+    <div class="resumen-carrito">
+      <table class="table">
         <tr>
-          <td class="resumenCompra">Cantidad</td>
-          <td class="resumenCompra">2 productos</td>
+          <td>
+            <img src="../media/products/buzo scream.jpg" alt="buzo scream" />
+          </td>
+          <td>Buzo Scream (S) × 1</td>
         </tr>
         <tr>
-          <td class="resumenCompra">Subtotal</td>
-          <td class="resumenCompra">$3.500</td>
+          <td>Subtotal</td>
+          <td>$4.000,00</td>
         </tr>
         <tr>
-          <td class="resumenCompra">Envío</td>
-          <td class="resumenCompra">$500</td>
+          <td>Envío</td>
+          <td>$500,00</td>
         </tr>
         <tr>
-          <td class="resumenCompra">Total</td>
-          <td class="resumenCompra">$4.000</td>
+          <td>Total</td>
+          <td>$4.500,00</td>
         </tr>
       </table>
-      <button class="botones">PAGAR</button>
-    </div>
-
-    <div class="carrito">
-      <img src="../media/products/remera good times.jpg" alt="remera good times" class="carrito-img" />
-      <img src="../media/products/short notte.jpg" alt="short logo" class="carrito-img" />
     </div>
   </section>
 
