@@ -5,13 +5,12 @@
 
 /* === GENERAL === */
 body {
-  background-image: url(/media/bg.PNG);
+  background-image: url(/media/bg.jpg);
   background-repeat: space repeat;
   color: #000100;
   font-family: "Oswald", sans-serif; }
 
 .botones {
-  font-weight: bold;
   font-size: 20px;
   padding: 10px;
   margin-top: 10px;
@@ -84,7 +83,7 @@ footer {
 .div-cuadros {
   display: flex;
   justify-content: center;
-  background-color: rgba(128, 128, 128, 0.062); }
+  background-color: rgba(158, 158, 158, 0.137); }
   .div-cuadros .cuadro-uno, .div-cuadros .cuadro-dos, .div-cuadros .cuadro-tres {
     width: 48vh;
     margin: 30px;
@@ -164,7 +163,7 @@ footer {
     margin-top: 60px;
     display: grid; }
     .section-contacto .div-contacto div {
-      background-color: #C3ACB8;
+      background-color: rgba(158, 158, 158, 0.137);
       padding: 40px;
       height: 30vh;
       display: flex;
@@ -179,17 +178,16 @@ footer {
           font-size: 25px;
           align-items: center; }
   .section-contacto .form-contacto section {
-    background-color: #D7C1D7;
+    background-color: #d7c1d7a6;
     padding: 40px;
     border-radius: 10px;
-    width: 60vh; }
+    width: 90vh; }
     .section-contacto .form-contacto section form {
       display: flex;
       flex-direction: column; }
-      .section-contacto .form-contacto section form h3 {
-        margin-bottom: 10px;
-        font-weight: bold;
-        text-align: center; }
+      .section-contacto .form-contacto section form h2 {
+        margin-bottom: 30px;
+        font-weight: bold; }
       .section-contacto .form-contacto section form label,
       .section-contacto .form-contacto section form div {
         margin: 10px 0px 10px 0px;
@@ -213,13 +211,17 @@ footer {
   text-align: center; }
 
 .info .info-pregunta {
-  font-size: 25px; }
+  font-size: 23px; }
   .info .info-pregunta:not(.collapsed) {
     color: #000100;
-    background-color: #F5F5F5; }
+    background-color: #F5F5F5;
+    background-image: none; }
   .info .info-pregunta:focus {
-    border-color: #C3ACB8;
-    box-shadow: 0 0 0 0.25rem #C3ACB8; }
+    border-color: rgba(158, 158, 158, 0.137);
+    box-shadow: 0 0 0 0.25rem #d7c1d7a6; }
+
+.info p {
+  font-size: 22px; }
 
 /* === CARRITO === */
 .section-carrito {
@@ -233,7 +235,7 @@ footer {
   .section-carrito .resumen-carrito {
     width: 70vh; }
     .section-carrito .resumen-carrito table {
-      background-color: rgba(245, 245, 245, 0.63);
+      background-color: rgba(158, 158, 158, 0.137);
       text-align: left;
       border-collapse: collapse;
       width: 75%; }
@@ -278,13 +280,22 @@ footer {
     border-top: solid 2px #000100;
     border-bottom: solid 2px #000100; }
   /*---- PRODUCTOS ----*/
+  .menu-nav {
+    display: none; }
   .container-productos {
     display: flex;
     flex-direction: column; }
     .container-productos .categorias {
-      margin-top: 0px;
-      padding-top: 0px;
-      padding-bottom: 0px; }
+      margin: 0;
+      padding: 0; }
+      .container-productos .categorias h2 {
+        text-align: center;
+        margin-bottom: 0; }
+      .container-productos .categorias ul {
+        display: flex;
+        justify-content: center; }
+        .container-productos .categorias ul li {
+          padding: 10px; }
     .container-productos .section-productos {
       display: flex;
       flex-direction: row;
@@ -293,6 +304,8 @@ footer {
       padding-top: 0px; }
       .container-productos .section-productos .card-product {
         width: 100%; }
+        .container-productos .section-productos .card-product .img-container {
+          width: 22em; }
   /*---- CONTACTO ----*/
   .div-contacto {
     display: grid;
@@ -315,12 +328,18 @@ footer {
   /*---- CARRITO ----*/
   .section-carrito {
     display: flex;
-    flex-direction: column-reverse; }
-    .section-carrito .carrito {
-      margin: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; } }
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: auto;
+    width: 40vh; }
+    .section-carrito .form-carrito {
+      width: 40vh;
+      padding-top: 60px;
+      justify-content: center; }
+      .section-carrito .form-carrito form div input, .section-carrito .form-carrito form div select {
+        width: 37vh; }
+    .section-carrito .resumen-carrito {
+      width: 40vh; } }
 
 /* Tablet ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

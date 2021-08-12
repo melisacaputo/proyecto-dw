@@ -59,14 +59,31 @@
   }
 
   /*---- PRODUCTOS ----*/
-  .container-productos {
+  .menu-nav{
+   display: none;
+  }.container-productos {
     display: flex;
     flex-direction: column;
 
     .categorias {
-      margin-top: 0px;
-      padding-top: 0px;
-      padding-bottom: 0px;
+      margin: 0;
+      padding: 0;
+
+
+      h2 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      ul {
+     display: flex;
+     justify-content: center;
+
+        li {
+          padding: 10px;
+        
+        }
+      }
     }
 
     .section-productos {
@@ -78,6 +95,10 @@
 
       .card-product {
         width: 100%;
+
+        .img-container {
+          width: 22em;
+        }
       }
     }
   }
@@ -119,12 +140,25 @@
   .section-carrito {
     display: flex;
     flex-direction: column-reverse;
-
-    .carrito {
-      margin: 0px;
-      display: flex;
-      flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 40vh;
+    
+    .form-carrito {
+      width: 40vh;
+      padding-top: 60px;
       justify-content: center;
+      form {
+
+        div {
+          input,select {
+            width: 37vh;
+          }
+        }
+      }
+    }
+    .resumen-carrito {
+        width: 40vh;
     }
   }
 }

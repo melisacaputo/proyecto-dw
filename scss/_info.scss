@@ -1,5 +1,6 @@
 /* === INFO === */
 .info {
+    
     h2 {
         margin: 20px;
         letter-spacing: 5px;
@@ -8,17 +9,24 @@
         text-align: center;
     }
 
+
     .info-pregunta {
-        font-size: $font + 5;
+        font-size: $font + 3;
+
 
         &:not(.collapsed) {
             color: $negro;
             background-color: $blanco;
+            background-image: none;
         }
 
         &:focus {
-            border-color: $lila;
-            box-shadow: 0 0 0 0.25rem $lila;
+            border-color: $transparencia;
+            box-shadow: 0 0 0 0.25rem $lavanda;
         }
+    }
+
+    p {
+        font-size: $font + 2;
     }
 }

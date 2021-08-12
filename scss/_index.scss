@@ -8,7 +8,7 @@
 .div-cuadros {
     display: flex;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.062);
+    background-color: $transparencia;
 
     .cuadro-uno, .cuadro-tres {
     width: 48vh;
