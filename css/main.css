@@ -6,7 +6,7 @@
 /* === GENERAL === */
 body {
   background-image: url(../media/bg.jpg);
-  background-repeat: space repeat;
+  background-repeat: space repeat center;
   color: #000100;
   font-family: "Oswald", sans-serif; }
 
@@ -100,8 +100,8 @@ footer {
     .div-cuadros .cuadro-uno p, .div-cuadros .cuadro-dos p, .div-cuadros .cuadro-tres p {
       margin-left: 10px; }
   .div-cuadros .cuadro-dos {
-    border-left: solid 2px #000100;
-    border-right: solid 2px #000100; }
+    border-left: solid 1px #000100;
+    border-right: solid 1px #000100; }
 
 /* === PRODUCTOS === */
 .menu-nav {
@@ -178,7 +178,7 @@ footer {
           font-size: 25px;
           align-items: center; }
   .section-contacto .form-contacto section {
-    background-color: #d7c1d7a6;
+    background-color: #d7c1d7d5;
     padding: 40px;
     border-radius: 10px;
     width: 90vh; }
@@ -218,7 +218,7 @@ footer {
     background-image: none; }
   .info .info-pregunta:focus {
     border-color: rgba(158, 158, 158, 0.137);
-    box-shadow: 0 0 0 0.25rem #d7c1d7a6; }
+    box-shadow: 0 0 0 0.25rem #d7c1d7d5; }
 
 .info p {
   font-size: 22px; }
@@ -256,6 +256,8 @@ footer {
       flex-direction: row;
       justify-content: flex-end;
       align-items: flex-end; }
+      header nav div a {
+        margin: 5px; }
       header nav div .logo {
         font-size: 40px; }
   footer {
@@ -277,8 +279,8 @@ footer {
   .cuadro-tres {
     border-left: none;
     border-right: none;
-    border-top: solid 2px #000100;
-    border-bottom: solid 2px #000100; }
+    border-top: solid 1px #444444;
+    border-bottom: solid 1px #444444; }
   /*---- PRODUCTOS ----*/
   .menu-nav {
     display: none; }
@@ -307,24 +309,27 @@ footer {
         .container-productos .section-productos .card-product .img-container {
           width: 22em; }
   /*---- CONTACTO ----*/
-  .div-contacto {
-    display: grid;
-    grid-template-columns: auto;
-    grid-column-gap: 10px; }
-  #wpp {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 50px; }
-  #redes {
-    padding: 50px; }
-  #datos {
-    padding: 50px 50px 70px 50px; }
-  .form-contacto {
-    display: none; }
+  .section-contacto {
+    display: flex;
+    flex-direction: column; }
+    .section-contacto .div-contacto {
+      margin-top: 0;
+      margin-bottom: 30px; }
+      .section-contacto .div-contacto div {
+        margin: auto;
+        width: 50vh;
+        padding: 30px;
+        border-radius: 0; }
+    .section-contacto .form-contacto section {
+      justify-content: center;
+      margin: auto;
+      width: 50vh; }
   /*---- INFO ----*/
   .info .info-pregunta {
     font-size: 20px;
     padding: 10px; }
+  .info p {
+    font-size: 20px; }
   /*---- CARRITO ----*/
   .section-carrito {
     display: flex;
@@ -333,13 +338,14 @@ footer {
     margin: auto;
     width: 40vh; }
     .section-carrito .form-carrito {
-      width: 40vh;
+      width: auto;
       padding-top: 60px;
-      justify-content: center; }
+      justify-content: center;
+      margin: auto; }
       .section-carrito .form-carrito form div input, .section-carrito .form-carrito form div select {
         width: 37vh; }
     .section-carrito .resumen-carrito {
-      width: 40vh; } }
+      width: auto; } }
 
 /* Tablet ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

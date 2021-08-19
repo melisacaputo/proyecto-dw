@@ -12,6 +12,9 @@
         justify-content: flex-end;
         align-items: flex-end;
 
+        a {
+          margin: 5px;
+        }
         .logo {
           font-size: $font * 2;
         }
@@ -54,8 +57,8 @@
   .cuadro-tres {
     border-left: none;
     border-right: none;
-    border-top: solid 2px $negro;
-    border-bottom: solid 2px $negro;
+    border-top: solid 1px $gris;
+    border-bottom: solid 1px $gris;
   }
 
   /*---- PRODUCTOS ----*/
@@ -104,28 +107,30 @@
   }
 
   /*---- CONTACTO ----*/
-  .div-contacto {
-    display: grid;
-    grid-template-columns: auto;
-    grid-column-gap: 10px;
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+  
+
+    .div-contacto {
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      div {      
+      margin: auto;
+      width: 50vh;
+      padding: 30px;
+      border-radius: 0;
+    }
   }
 
-  #wpp {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 50px;
-  }
-
-  #redes {
-    padding: 50px;
-  }
-
-  #datos {
-    padding: 50px 50px 70px 50px;
-  }
-
-  .form-contacto {
-    display: none;
+    .form-contacto {
+      section {
+        justify-content: center;
+        margin: auto;
+        width: 50vh;
+      }
+    }
   }
 
   /*---- INFO ----*/
@@ -133,6 +138,9 @@
     .info-pregunta {
       font-size: $font;
       padding: 10px;
+    }
+    p {
+      font-size: $font;
     }
   }
 
@@ -145,9 +153,10 @@
     width: 40vh;
     
     .form-carrito {
-      width: 40vh;
+      width: auto;
       padding-top: 60px;
       justify-content: center;
+      margin: auto;
       form {
 
         div {
@@ -158,7 +167,7 @@
       }
     }
     .resumen-carrito {
-        width: 40vh;
+        width: auto;
     }
   }
 }

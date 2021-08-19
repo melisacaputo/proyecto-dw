@@ -9,7 +9,7 @@ $negro: #000100;
 $blanco: #F5F5F5;
 $gris: #444444;
 $lila: #C3ACB8;
-$lavanda: #d7c1d7a6;
+$lavanda: #d7c1d7d5;
 $transparencia: rgba(158, 158, 158, 0.137);
 
 // TIPOGRAFIA 
@@ -18,7 +18,7 @@ $font: 20px;
 /* === GENERAL === */
 body {
   background-image: url(../media/bg.jpg);
-  background-repeat: space repeat;
+  background-repeat: space repeat center;
   color: $negro;
   font-family: "Oswald", sans-serif;
 }
