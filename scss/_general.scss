@@ -6,13 +6,13 @@
 
 // PALETA DE COLORES ----
 $negro: #000100;
-$blanco: #F5F5F5;
+$blanco: #f5f5f5;
 $gris: #444444;
-$lila: #C3ACB8;
+$lila: #c3acb8;
 $lavanda: #d7c1d7d5;
 $transparencia: rgba(158, 158, 158, 0.137);
 
-// TIPOGRAFIA 
+// TIPOGRAFIA ----
 $font: 20px;
 
 /* === GENERAL === */
@@ -35,6 +35,6 @@ p {
   font-size: $font;
 }
 
-ol,ul {
+ol, ul {
   padding-left: 0px;
 }

@@ -31,41 +31,43 @@
                 list-style-type: none;
 
                 a {
-                text-decoration: none;
-                color: $negro;
-                font-size: $font;
+                    text-decoration: none;
+                    color: $negro;
+                    font-size: $font;
                 }
             }
         }
     }
+
     .section-productos {
         width: 100%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        
+
         .card-product {
             width: 40%;
             font-family: sans-serif;
             margin: 20px;
-    
+
             a {
                 text-decoration: none;
                 color: black;
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
 
-                p, strong {
+                p,
+                strong {
                     font-family: oswald, sans-serif;
                 }
             }
-    
+
             .img-container {
                 overflow: hidden;
                 position: relative;
-    
+
                 img {
                     width: 80%;
                     height: 50%;
@@ -73,5 +75,5 @@
                 }
             }
         }
-}
+    }
 }

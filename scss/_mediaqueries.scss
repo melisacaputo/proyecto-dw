@@ -1,9 +1,9 @@
-/* Smartphone ----------- */
+/* ----------- SMARTPHONE ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-  /*---- GENERAL ----*/
+  /*--- GENERAL ---*/
   header {
-    font-size: $font + 8;
+    font-size: $font + 6;
 
     nav {
       div {
@@ -15,6 +15,7 @@
         a {
           margin: 5px;
         }
+
         .logo {
           font-size: $font * 2;
         }
@@ -23,7 +24,11 @@
   }
 
   footer {
-    font-size: $font - 4;
+    font-size: $font - 2;
+
+    p {
+      font-size: $font - 2;
+    }
 
     .footer-content {
       flex-direction: column;
@@ -31,10 +36,9 @@
 
       .footer-info {
         display: flex;
-
-        li:first-of-type {
-          margin-right: 20px;
-        }
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
       }
 
       .footer-redes {
@@ -47,24 +51,43 @@
     }
   }
 
-  /*---- INDEX ----*/
+  /*--- INDEX ---*/
   .img-mobile {
     width: 20em;
   }
 
-  .cuadro-uno,
-  .cuadro-dos,
-  .cuadro-tres {
-    border-left: none;
-    border-right: none;
-    border-top: solid 1px $gris;
-    border-bottom: solid 1px $gris;
+  .div-cuadros {
+
+    .cuadro-uno,
+    .cuadro-dos,
+    .cuadro-tres {
+      border-left: none;
+      border-right: none;
+      border-top: solid 1px $gris;
+      border-bottom: solid 1px $gris;
+      margin: 15px;
+
+      h2,
+      p {
+        font-size: $font - 2;
+      }
+    }
   }
 
-  /*---- PRODUCTOS ----*/
-  .menu-nav{
-   display: none;
-  }.container-productos {
+  /*--- PRODUCTOS ---*/
+  .menu-nav {
+    background-color: $transparencia;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    ol {
+      margin-bottom: 0px;
+    }
+  }
+
+  .container-productos {
     display: flex;
     flex-direction: column;
 
@@ -72,19 +95,17 @@
       margin: 0;
       padding: 0;
 
-
       h2 {
         text-align: center;
         margin-bottom: 0;
       }
 
       ul {
-     display: flex;
-     justify-content: center;
+        display: flex;
+        justify-content: center;
 
         li {
           padding: 10px;
-        
         }
       }
     }
@@ -106,87 +127,97 @@
     }
   }
 
-  /*---- CONTACTO ----*/
-  .section-contacto {
-    display: flex;
-    flex-direction: column;
-  
-
-    .div-contacto {
-      margin-top: 0;
-      margin-bottom: 30px;
-
-      div {      
-      margin: auto;
-      width: 50vh;
-      padding: 30px;
-      border-radius: 0;
-    }
-  }
-
-    .form-contacto {
-      section {
-        justify-content: center;
-        margin: auto;
-        width: 50vh;
-      }
-    }
-  }
-
-  /*---- INFO ----*/
-  .info {
-    .info-pregunta {
-      font-size: $font;
-      padding: 10px;
-    }
-    p {
-      font-size: $font;
-    }
-  }
-
-  /*---- CARRITO ----*/
+  /*--- CARRITO ---*/
   .section-carrito {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    margin: auto;
-    width: 40vh;
-    
-    .form-carrito {
-      width: auto;
-      padding-top: 60px;
-      justify-content: center;
-      margin: auto;
-      form {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 
-        div {
-          input,select {
-            width: 37vh;
-          }
-        }
+    .form-carrito {
+      padding-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+    }
+
+    .resumen-carrito {
+      margin-right: auto;
+      margin-left: auto;
+      width: 75%;
+    }
+  }
+
+  /*--- CONTACTO ---*/
+  .section-contacto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    .div-contacto {
+      margin-top: 0px;
+      justify-content: center;
+
+      div {
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
-    .resumen-carrito {
-        width: auto;
+
+    .form-contacto {
+      margin-top: 50px;
+
+      section {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
+    }
+  }
+
+  /*--- INFO ---*/
+  .info {
+    h2 {
+      font-size: $font + 8;
+      margin: 28px;
+    }
+
+    .info-pregunta {
+      font-size: $font + 2;
+    }
+
+    p {
+      font-size: $font + 1;
     }
   }
 }
 
-/* Tablet ----------- */
+/* ----------- TABLET ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-  /*---- GENERAL ----*/
-  nav {
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
+  /*--- GENERAL ---*/
+  header {
+    nav {
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        a {
+          margin: 5px;
+        }
+      }
     }
   }
 
-  p {
-    font-size: $font + 4;
+  p,
+  li {
+    font-size: $font + 5;
   }
 
   footer {
@@ -194,30 +225,46 @@
 
     .footer-content {
       justify-content: space-around;
+      margin-bottom: 25px;
     }
   }
 
   /*----INDEX----*/
-  .cuadro-uno,
-  .cuadro-dos,
-  .cuadro-tres {
-    border: solid 2px $negro;
+  .section-cuadros {
+    max-width: 600px;
+
+    .div-cuadros {
+
+      .cuadro-uno,
+      .cuadro-tres {
+        margin: 10px;
+      }
+
+      .cuadro-dos {
+        margin: 10px;
+        border-left: none;
+        border-right: none;
+        border-top: solid 1px $gris;
+        border-bottom: solid 1px $gris;
+      }
+    }
   }
 
-  /*---- PRODUCTOS ----*/
+  /*--- PRODUCTOS ---*/
   .container-productos {
     display: flex;
     flex-direction: column;
 
     .categorias {
-   
       margin-top: 0px;
       padding-top: 0px;
       padding-bottom: 0px;
       text-align: center;
+
       ul {
         display: flex;
-        justify-content: center;      
+        justify-content: center;
+
         li {
           a {
             font-size: $font + 5;
@@ -228,40 +275,130 @@
     }
 
     .section-productos {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      width: 100%;
       padding-top: 0px;
+
       .card-product {
         width: 80%;
+        justify-self: center;
+        text-align: center;
+
+        .img-container {
+          img {
+            width: 20em;
+            align-self: center;
+          }
+        }
+
+        strong {
+          font-size: $font + 2;
+        }
       }
     }
   }
 
-  /*---- CONTACTO ----*/
-  .form-contacto {
-    display: none;
-  }
-
-  #wpp {
-    padding: 50px 30vh;
-    margin-top: 40px;
-    margin-bottom: 80px;
-  }
-
-  /*---- CARRITO ----*/
+  /*--- CARRITO ---*/
   .section-carrito {
-    margin-left: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column-reverse;
 
-    .carrito {
-      table {
-        width: 30vh;
+    .form-carrito {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
 
-        td {
-          font-size: $font + 5;
+      form {
+        h2 {
+          font-size: $font + 8;
+        }
+
+        input,
+        select,
+        button {
+          font-size: $font + 3;
         }
       }
+    }
+
+    .resumen-carrito {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+
+      table {
+        width: 100%;
+
+        tr {
+          td {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*--- CONTACTO ---*/
+  .section-contacto {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    .div-contacto {
+      margin-top: 0px;
+      justify-content: center;
+
+      div {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .form-contacto {
+      margin-top: 50px;
+
+      section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        form {
+          h2 {
+            font-size: $font + 10;
+            text-align: center;
+          }
+
+          label,
+          div,
+          input {
+            font-size: $font + 4;
+          }
+        }
+      }
+    }
+  }
+
+  /*--- INFO ---*/
+
+  .info {
+    h2 {
+      font-size: $font + 12;
+    }
+
+    .info-pregunta {
+      font-size: $font + 7;
+    }
+
+    p {
+      font-size: $font + 6;
     }
   }
 }
