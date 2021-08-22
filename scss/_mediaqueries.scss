@@ -7,9 +7,6 @@
 
     nav {
       div {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
         align-items: flex-end;
 
         a {
@@ -77,13 +74,14 @@
   /*--- PRODUCTOS ---*/
   .menu-nav {
     background-color: $transparencia;
-    width: 55%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 
     ol {
       margin-bottom: 0px;
+      justify-content: center;
     }
   }
 
@@ -146,6 +144,10 @@
       margin-right: auto;
       margin-left: auto;
       width: 75%;
+
+      table {
+        text-align: center;
+      }
     }
   }
 
@@ -171,7 +173,7 @@
       margin-top: 50px;
 
       section {
-        width: 85%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
@@ -183,7 +185,7 @@
   .info {
     h2 {
       font-size: $font + 8;
-      margin: 28px;
+      padding: 18px;
     }
 
     .info-pregunta {
@@ -203,9 +205,6 @@
   header {
     nav {
       div {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
         align-items: flex-end;
 
         a {
@@ -221,8 +220,6 @@
   }
 
   footer {
-    font-size: $font + 2;
-
     .footer-content {
       justify-content: space-around;
       margin-bottom: 25px;
@@ -251,14 +248,24 @@
   }
 
   /*--- PRODUCTOS ---*/
+  .menu-nav {
+    background-color: $transparencia;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    ol {
+      margin-bottom: 0px;
+      justify-content: center;
+    }
+  }
+
   .container-productos {
     display: flex;
     flex-direction: column;
 
     .categorias {
-      margin-top: 0px;
-      padding-top: 0px;
-      padding-bottom: 0px;
       text-align: center;
 
       ul {
@@ -277,24 +284,20 @@
     .section-productos {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      justify-content: center;
-      width: 100%;
-      padding-top: 0px;
 
       .card-product {
-        width: 80%;
+        width: 85%;
         justify-self: center;
         text-align: center;
 
         .img-container {
           img {
             width: 20em;
-            align-self: center;
           }
         }
 
         strong {
-          font-size: $font + 2;
+          font-size: $font;
         }
       }
     }
@@ -333,7 +336,7 @@
       margin-bottom: 50px;
 
       table {
-        width: 100%;
+        text-align: center;
 
         tr {
           td {
@@ -358,12 +361,11 @@
 
       div {
         margin-top: 40px;
-        margin-bottom: 40px;
       }
     }
 
     .form-contacto {
-      margin-top: 50px;
+      margin-top: 80px;
 
       section {
         width: 100%;
@@ -373,7 +375,6 @@
         form {
           h2 {
             font-size: $font + 10;
-            text-align: center;
           }
 
           label,

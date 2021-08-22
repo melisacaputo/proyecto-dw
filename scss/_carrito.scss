@@ -1,8 +1,11 @@
 /* === CARRITO === */
 .section-carrito {
     display: flex;
-    justify-content: space-around;
-    margin-left: 20vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
     .form-carrito {
         width: 80vh;
@@ -15,19 +18,16 @@
     }
 
     .resumen-carrito {
-        width: 70vh;
+        width: 60vh;
 
         table {
             background-color: $transparencia;
-            text-align: left;
             border-collapse: collapse;
-            width: 75%;
 
             tr {
                 td {
                     font-size: $font;
                     padding: 15px;
-                    width: 20em;
 
                     img {
                         width: 7em;
