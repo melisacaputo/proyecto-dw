@@ -300,7 +300,8 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-left: 0px; }
     .menu-nav ol {
       margin-bottom: 0px;
       justify-content: center; }
@@ -406,7 +407,8 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-left: 0px; }
     .menu-nav ol {
       margin-bottom: 0px;
       justify-content: center; }
