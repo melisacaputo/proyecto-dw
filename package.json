@@ -1,7 +1,7 @@
 {
-  "name": "proyect",
+  "name": "notte-clothing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto final para el curso de desarrollo web de Coder House hecho por Melisa Caputo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
-  "author": "",
+  "author": "Melisa Caputo",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
