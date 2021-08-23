@@ -167,7 +167,7 @@ footer {
     .section-contacto .div-contacto div {
       background-color: rgba(158, 158, 158, 0.137);
       padding: 40px;
-      height: 30vh;
+      height: 40vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -359,7 +359,8 @@ footer {
       justify-content: center; }
       .section-contacto .div-contacto div {
         margin-top: 20px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        height: 30vh; }
     .section-contacto .form-contacto {
       margin-top: 50px; }
       .section-contacto .form-contacto section {
@@ -471,7 +472,8 @@ footer {
       margin-top: 0px;
       justify-content: center; }
       .section-contacto .div-contacto div {
-        margin-top: 40px; }
+        margin-top: 40px;
+        height: 30vh; }
     .section-contacto .form-contacto {
       margin-top: 80px; }
       .section-contacto .form-contacto section {
