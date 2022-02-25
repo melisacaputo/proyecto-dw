@@ -28,19 +28,21 @@ header {
   margin-bottom: 50px;
   box-shadow: 0px 0px 15px 0px #000100;
   font-family: "Bebas Neue", cursive;
-  font-size: 32px;
+  font-size: 28px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1; }
-  header nav div {
-    display: flex;
-    justify-content: flex-end; }
-    header nav div .logo {
-      font-size: 60px;
-      font-style: italic; }
-    header nav div a {
-      margin: 20px; }
+  header nav {
+    height: 100px; }
+    header nav div {
+      display: flex;
+      justify-content: flex-end; }
+      header nav div .logo {
+        font-size: 40px;
+        font-style: italic; }
+      header nav div a {
+        margin: 20px; }
   header h1 {
     display: none; }
 
@@ -257,12 +259,14 @@ footer {
   /*--- GENERAL ---*/
   header {
     font-size: 26px; }
-    header nav div {
-      align-items: flex-end; }
-      header nav div a {
-        margin: 5px; }
-      header nav div .logo {
-        font-size: 40px; }
+    header nav {
+      height: 100%; }
+      header nav div {
+        align-items: flex-end; }
+        header nav div a {
+          margin: 5px; }
+        header nav div .logo {
+          font-size: 40px; }
   footer {
     font-size: 18px; }
     footer p {
