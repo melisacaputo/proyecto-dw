@@ -12,9 +12,6 @@ $lila: #c3acb8;
 $lavanda: #d7c1d7d5;
 $transparencia: rgba(158, 158, 158, 0.137);
 
-// TIPOGRAFIA ----
-$font: 20px;
-
 /* === GENERAL === */
 body {
   background-image: url(../media/bg.jpg);
@@ -24,7 +21,7 @@ body {
 }
 
 .botones {
-  font-size: $font;
+  font-size: 1rem;
   padding: 10px;
   margin-top: 10px;
   background-color: $lila;
@@ -32,7 +29,7 @@ body {
 
 p {
   margin: 0px;
-  font-size: $font;
+  font-size: 1.2rem;
 }
 
 ol, ul {
