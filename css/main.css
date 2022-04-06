@@ -17,8 +17,7 @@ body {
   background-color: #c3acb8; }
 
 p {
-  margin: 0px;
-  font-size: 1.2rem; }
+  margin: 0px; }
 
 ol, ul {
   padding-left: 0px; }
@@ -255,14 +254,16 @@ footer {
     align-items: flex-end; }
     header nav div a {
       margin: 5px; }
-  footer .footer-content {
-    flex-direction: column;
-    align-items: center; }
-    footer .footer-content .footer-info {
-      display: flex;
+  footer {
+    font-size: 1rem; }
+    footer .footer-content {
       flex-direction: column;
-      text-align: center;
-      margin-bottom: 30px; }
+      align-items: center; }
+      footer .footer-content .footer-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px; }
   /*--- INDEX ---*/
   .img-mobile {
     width: 20em; }
@@ -275,7 +276,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-left: 0px; }
+    padding: 5px 0px; }
     .menu-nav ol {
       margin-bottom: 0px;
       justify-content: center; }
@@ -360,17 +361,10 @@ footer {
     justify-content: space-around;
     margin-bottom: 25px; }
   /*----INDEX----*/
-  .section-cuadros {
-    max-width: 600px; }
-    .section-cuadros .div-cuadros .cuadro-uno,
-    .section-cuadros .div-cuadros .cuadro-tres {
-      margin: 10px; }
-    .section-cuadros .div-cuadros .cuadro-dos {
-      margin: 10px;
-      border-left: none;
-      border-right: none;
-      border-top: solid 1px #444444;
-      border-bottom: solid 1px #444444; }
+  .div-cuadros .boxes h2 {
+    font-size: 1rem; }
+  .div-cuadros .boxes p {
+    font-size: .9rem; }
   /*--- PRODUCTOS ---*/
   .menu-nav {
     background-color: rgba(158, 158, 158, 0.137);
@@ -378,7 +372,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-left: 0px; }
+    padding: 10px 0px; }
     .menu-nav ol {
       margin-bottom: 0px;
       justify-content: center; }
@@ -427,14 +421,17 @@ footer {
     display: flex;
     flex-direction: column; }
     .section-contacto .div-contacto {
-      margin-top: 0px;
-      justify-content: center; }
+      width: 60%;
+      margin: auto; }
       .section-contacto .div-contacto div {
         margin-top: 40px;
-        height: 30vh; }
+        font-size: 1.1rem; }
     .section-contacto .form-contacto {
       margin-top: 80px; }
       .section-contacto .form-contacto section {
         width: 100%;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto; }
+  /*--- INFO ---*/
+  .info .info-pregunta {
+    font-size: 1.1rem; } }

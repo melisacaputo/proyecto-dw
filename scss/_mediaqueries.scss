@@ -16,6 +16,7 @@
   }
 
   footer {
+    font-size: 1rem;
     .footer-content {
       flex-direction: column;
       align-items: center;
@@ -27,6 +28,7 @@
         margin-bottom: 30px;
       }
     }
+
   }
 
   /*--- INDEX ---*/
@@ -49,7 +51,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-left: 0px;
+    padding: 5px 0px;
 
     ol {
       margin-bottom: 0px;
@@ -158,10 +160,12 @@
     h2 {
       padding: 18px;
     }
-    .info-pregunta{
+
+    .info-pregunta {
       font-size: 1rem;
     }
-    p{
+
+    p {
       font-size: 1rem;
     }
   }
@@ -191,22 +195,14 @@
   }
 
   /*----INDEX----*/
-  .section-cuadros {
-    max-width: 600px;
-
-    .div-cuadros {
-
-      .cuadro-uno,
-      .cuadro-tres {
-        margin: 10px;
+  .div-cuadros {
+    .boxes {
+      h2 {
+        font-size: 1rem;
       }
 
-      .cuadro-dos {
-        margin: 10px;
-        border-left: none;
-        border-right: none;
-        border-top: solid 1px $gris;
-        border-bottom: solid 1px $gris;
+      p {
+        font-size: .9rem;
       }
     }
   }
@@ -218,7 +214,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-left: 0px;
+    padding: 10px 0px;
 
     ol {
       margin-bottom: 0px;
@@ -298,12 +294,12 @@
     flex-direction: column;
 
     .div-contacto {
-      margin-top: 0px;
-      justify-content: center;
+      width: 60%;
+      margin: auto;
 
       div {
         margin-top: 40px;
-        height: 30vh;
+        font-size: 1.1rem;
       }
     }
 
@@ -315,6 +311,13 @@
         margin-left: auto;
         margin-right: auto;
       }
+    }
+  }
+
+  /*--- INFO ---*/
+  .info{
+    .info-pregunta{
+      font-size: 1.1rem;
     }
   }
 }
